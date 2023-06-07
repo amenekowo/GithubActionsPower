@@ -6,6 +6,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Sleep for 10 sec to show logs
+        run: |
+          sleep 10
       - uses: actions/checkout@v2
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
